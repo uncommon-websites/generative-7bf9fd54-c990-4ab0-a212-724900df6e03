@@ -47,11 +47,72 @@ export type NavItem = {
 };
 
 export const cta = {
-	label: "Book demo",
-	href: "/"
+	label: "Start free trial",
+	href: "/get-started"
 };
 
 export const navigation: NavItem[] = [
+	{
+		label: "Product",
+		showInNav: true,
+		showInFooter: false,
+		children: [
+			{
+				label: "Features",
+				href: "/features",
+				showInNav: true,
+				showInFooter: false,
+				description: "Visual capture and searchable instructions"
+			},
+			{
+				label: "Use cases",
+				href: "/use-cases",
+				showInNav: true,
+				showInFooter: false,
+				description: "Manufacturing workflows and training"
+			}
+		]
+	},
+	{
+		label: "Solutions",
+		href: "/solutions",
+		showInNav: true,
+		showInFooter: false
+	},
+	{
+		label: "Pricing",
+		href: "/pricing",
+		showInNav: true,
+		showInFooter: false
+	},
+	{
+		label: "Resources",
+		showInNav: true,
+		showInFooter: true,
+		children: [
+			{
+				label: "Documentation",
+				href: "/docs",
+				showInNav: true,
+				showInFooter: true,
+				description: "Get started guides and API reference"
+			},
+			{
+				label: "Case studies",
+				href: "/case-studies",
+				showInNav: true,
+				showInFooter: true,
+				description: "See how teams use Squint"
+			},
+			{
+				label: "Blog",
+				href: "/blog",
+				showInNav: true,
+				showInFooter: true,
+				description: "Manufacturing insights and best practices"
+			}
+		]
+	},
 	{
 		label: "Company",
 		showInNav: false,
@@ -62,17 +123,17 @@ export const navigation: NavItem[] = [
 				href: "/about",
 				showInNav: false,
 				showInFooter: true
+			},
+			{
+				label: "Contact",
+				href: "/contact",
+				showInNav: false,
+				showInFooter: true
 			}
 		]
 	},
 	{
-		label: "About",
-		href: "/about",
-		showInNav: true,
-		showInFooter: false
-	},
-	{
-		label: "More",
+		label: "Legal",
 		showInNav: false,
 		showInFooter: true,
 		children: [
@@ -87,8 +148,13 @@ export const navigation: NavItem[] = [
 				href: "/legal/terms",
 				showInNav: false,
 				showInFooter: true
+			},
+			{
+				label: "Security",
+				href: "/legal/security",
+				showInNav: false,
+				showInFooter: true
 			}
-			// Social media might be handled differently, not typically a nav item
 		]
 	}
 ];
